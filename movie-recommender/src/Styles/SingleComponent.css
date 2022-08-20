@@ -46,8 +46,12 @@ border-radius: 2rem;
   text-align: center;
   text-decoration: none;
   color: wheat;
-  text-transform: uppercase;
+  
   padding:1rem
+}
+
+.cardType{
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 1000px) {
