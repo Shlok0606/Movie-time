@@ -67,7 +67,7 @@ border-radius: 2rem;
   .cardImage{
     border-radius: 2rem;
     width: 95%;
-    height: 110%;
+    height: 45vh;
   }
   .cardImageContainer{
   padding: 0%;
@@ -76,7 +76,8 @@ border-radius: 2rem;
 
       .cardContainer{
       
-       margin: 1rem;
+       margin: 0.7rem;
+       margin-bottom: 1rem;
       }
 
       
@@ -85,5 +86,11 @@ border-radius: 2rem;
  
   margin: 2.5% 0;
    
+}
+.cardSubhead{
+  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  grid-template-columns: 1fr 2fr;
+  text-align: center;
 }
 }
