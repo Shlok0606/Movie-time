@@ -53,8 +53,7 @@ setwordDate(`${day} ${month}, ${year}`);
   }
 
  
-}, [])
-
+}, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return(
    
