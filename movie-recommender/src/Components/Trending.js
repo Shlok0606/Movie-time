@@ -1,27 +1,29 @@
 import React, { useState , useEffect} from 'react'
 import Subhead from './Subhead';
 import SingleContent from './SingleComponent';
+import axios from 'axios';
 // import '../Styles/Movies.css'
 
 import Header from '../Components/Header';
-const url=`https://api.themoviedb.org/3/trending/all/week?api_key=52bfcae0dc91f5f46cb967987f36523a` ;
+// const url=`https://api.themoviedb.org/3/trending/all/week?api_key=52bfcae0dc91f5f46cb967987f36523a` ;
 
 
 function Trending() {
 
   const [data, setdata] = useState([])
   const fetchData = async ()=>{
-      const res=await fetch(url);
-      const ans=await res.json();
+    const { ans } = await axios.get(
+      'https://api.themoviedb.org/3/trending/all/week?api_key=52bfcae0dc91f5f46cb967987f36523a'
+    );
       setdata(ans.results);
  
     
   }
   useEffect(() => {
     
-   return fetchData; 
+    fetchData(); 
    
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
   
 
 
