@@ -1,0 +1,50 @@
+
+.navbarTitleContainer{
+    color: white;
+    margin: 1rem 0;
+}
+
+.navbarTitle{
+    text-align: center;
+    text-transform: uppercase;
+     font-size: 3rem;  
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .navbarTitle{
+        font-size: 1.8rem;
+    }
+
+    .navContainer{
+        display: grid;
+        grid-template-columns: repeat(7 , 1fr);
+    }
+    
+    .navCell{
+        font-size: 0.9rem;
+       
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .navContainer{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        
+    }
+
+    .navCell{
+        font-size: 0.8rem;
+       
+    }
+    
+}
+
+
+  

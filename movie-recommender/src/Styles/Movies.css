@@ -1,0 +1,25 @@
+.body{
+    padding: 0 6%;
+    /* background-color: black; */
+    padding-top: 1rem;
+    /* background-image: url("https://www.linkpicture.com/q/Neon-Blue-Backgrounds.png"); */
+}
+
+
+@media screen and (max-width: 1700px) {
+    .body{
+        padding: 0 0.5%;
+    }
+    }
+@media screen and (max-width: 1400px) {
+.body{
+    padding: 0 2%;
+}
+}
+
+
+@media screen and (max-width: 1400px){
+    .body{
+        padding: 0 0;
+    }
+}

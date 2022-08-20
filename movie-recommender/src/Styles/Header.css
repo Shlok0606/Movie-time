@@ -1,0 +1,36 @@
+
+  
+  /* -------------------Header------------ */
+  
+  body{
+    
+    padding: 0;
+    margin: 0;
+  }
+  .headerContainer{
+    
+    /* background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png"); */
+    padding: 1.5rem 0;
+    font-family: "Helvetica Neue", sans-serif;
+  
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .header{
+    color: white;
+    font-size: 4rem;
+    animation: flicker 1.5s infinite alternate;     
+  }
+  
+  @media screen and (max-width: 760px) {
+   
+    .headerContainer{
+        padding: 1rem 0;
+    }
+
+    .header{
+        font-size: 2.6rem;
+    }
+
+  }

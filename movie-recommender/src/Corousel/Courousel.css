@@ -1,0 +1,21 @@
+.carouselItem {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    padding-bottom: 3px;
+    width: 3rem;
+  }
+  .carouselItem__img {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 5px black;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .carouselItem__txt{
+      font-size: 1rem;
+      color: white;
+    }
+  

@@ -1,0 +1,97 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+ 
+    /* background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png"); */
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+
+}
+
+
+/* -------------------------Neon Text------------------- */
+
+.neonText {
+  letter-spacing: 10px;
+  color: #fff;
+  text-shadow:
+  0 0 8px #fff,
+  0 0 15px #fff,
+  0 0 16px #5271ff,
+  0 0 40px #5271ff,
+  0 0 25px #5271ff,
+  0 0 80px #5271ff;
+}
+
+.whiteText {
+  font-size: 3rem;
+  letter-spacing: 6px;
+  color: #fff;
+  text-shadow:
+  0 0 0px #fff,
+  0 0 6px #fff,
+  0 0 2px #fff,
+  0 0 0px #fff,
+  0 0 0px #fff,
+  0 0 0px #fff;
+}
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 0px #fff,
+      0 0 1px #fff,
+      0 0 9px #fff,
+      0 0 20px #5271ff,
+      0 0 20px #5271ff,
+      0 0 10px #5271ff,
+      0 0 20px #5271ff,
+      0 0 20px #5271ff;
+  
+  }
+  
+  20%,  55% {        
+      text-shadow: none;
+  }    
+}
+
+/* -------------------Background Glow-------- */
+.bgGlow {
+
+  background-color: #5271ff;
+  color: #000;
+
+  box-shadow: 0 0 5px #5271ff,
+              0 0 10px #5271ff,
+              0 0 25px #5271ff,
+              0 0 50px #5271ff;
+             
+  /* transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out; */
+}
+
+.bgWhite{
+  color: black;
+  background-color: white;
+}
+
+.cardGrid{
+  display: grid;;
+  grid-template-columns: repeat(4,1fr);
+}
+
+
+@media screen and (max-width: 1100px) {
+  .cardGrid{
+    grid-template-columns: repeat(3,1fr);
+  } 
+}
+
+@media screen and (max-width: 800px) {
+  .cardGrid{
+    grid-template-columns: repeat(2,1fr);
+  } 
+}
+
