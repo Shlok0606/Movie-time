@@ -12,7 +12,8 @@ function FooterRouter() {
   <div className='body'>
 
       <Routes>
-        <Route path="/" element={<Trending/>}/>
+      <Route path="/" element={<Trending/>}/>
+        <Route path="/trending" element={<Trending/>}/>
           <Route path="/movies" element={<Movies />} />
           <Route path="/tvSeries" element={<TVSeries />} />
           <Route path="/search" element={<Search />} />

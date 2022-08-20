@@ -2,8 +2,7 @@ import React from 'react'
 import { Outlet, Link } from "react-router-dom";
 import Trending from './Trending'
 import Search from './Search'
-import Movies from './Movies'
-import TVSeries from './TVSeries'
+
 function FooterLink() {
  
     return (

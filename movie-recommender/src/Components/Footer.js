@@ -34,7 +34,7 @@ function Footer() {
 <div></div>
 
 <div  className="footerElement bgGlow"  onClick={ToggleBg}>
-           <Link to="/" > 
+           <Link to="/trending" > 
            <div className="footerData" >
              <AiFillFire></AiFillFire>
            <br />
