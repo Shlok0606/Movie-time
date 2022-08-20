@@ -67,7 +67,7 @@ border-radius: 2rem;
   .cardImage{
     border-radius: 2rem;
     width: 95%;
-    height: 45vh;
+    height: 44vh;
   }
   .cardImageContainer{
   padding: 0%;
@@ -78,6 +78,7 @@ border-radius: 2rem;
       
        margin: 0.7rem;
        margin-bottom: 1rem;
+       padding-bottom: 0.5rem;
       }
 
       
