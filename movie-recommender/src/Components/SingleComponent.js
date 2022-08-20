@@ -26,6 +26,7 @@ useEffect(() => {
   var day="";
    var month="";
    
+   if(date){
  var i=0;
  while(i<date.length&&date[i]!=='-'){
    year+=date[i];
@@ -48,7 +49,8 @@ while(i<date.length){
 console.log(date, day , monthInt , year);
 
 setwordDate(`${day} ${month}, ${year}`);
-  if(!date){
+   }
+  else{
     setwordDate("");
   }
 

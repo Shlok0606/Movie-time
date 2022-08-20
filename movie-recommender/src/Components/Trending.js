@@ -1,7 +1,7 @@
 import React, { useState , useEffect} from 'react'
 import Subhead from './Subhead';
 import SingleContent from './SingleComponent';
-// import '../Styles/Movies.css'
+ import '../Styles/Trending.css'
 
 import Header from '../Components/Header';
 const url=`https://api.themoviedb.org/3/trending/all/week?api_key=52bfcae0dc91f5f46cb967987f36523a` ;
@@ -27,7 +27,7 @@ function Trending() {
 
   return (
 
-<>
+<div className='trendingOuter'>
 <Header></Header>
 <Subhead data="Trending"></Subhead>
 <div  className='cardGrid'> 
@@ -55,7 +55,7 @@ function Trending() {
     
     </div>
 
-    </>
+    </div>
   )
 }
 

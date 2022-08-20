@@ -10,7 +10,7 @@ import "../Styles/Search.css";
 import SearchIcon from '@mui/icons-material/Search';
 import { useEffect, useState } from "react";
 import Subhead from "./Subhead";
-
+import CustomPagination from "../Pagination/pagination";
 import Header from '../Components/Header';
 // import '../Styles/Movies.css'
 //import CustomPagination from "../../components/Pagination/CustomPagination";
@@ -20,6 +20,7 @@ const Search = () => {
   const [type, setType] = useState(0);
   const [searchText, setSearchText] = useState("");
   const [page, setPage] = useState(1);
+  const [numOfPages, setNumOfPages] = useState();
   const [content, setContent] = useState([]);
 
 
@@ -36,6 +37,7 @@ const Search = () => {
     const res=await fetch(`https://api.themoviedb.org/3/search/${type ? "tv" : "movie"}?api_key=52bfcae0dc91f5f46cb967987f36523a&language=en-US&query=${searchText}&page=${page}&include_adult=false`);
     const ans=await res.json();
       setContent(ans.results);
+      setNumOfPages(ans.total_pages<500?ans.total_pages:500);
       //setNumOfPages(data.total_pages);
     // console.log(ans);
     
@@ -54,6 +56,10 @@ const Search = () => {
    setSearchText(e.target.value)
    
   }
+
+
+
+  
   return (
     <div className="searchContainer">
        <Header></Header>
@@ -107,7 +113,9 @@ const Search = () => {
           !content &&
           (type ? <h2>No Series Found</h2> : <h2>No Movies Found</h2>)}
       </div>
-     
+      {searchText  && (
+        <CustomPagination color="secondary" setPage={setPage} numOfPages={numOfPages} />
+      )}
     </div>
   );
 };

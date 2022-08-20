@@ -61,13 +61,16 @@ border-radius: 2rem;
   .cardSubhead{
     font-size: 0.9rem;
   }
+  .cardContainer{
+    margin: 1rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .cardImage{
     border-radius: 2rem;
     width: 95%;
-    height: 40vh;
+    height: 37vh;
   }
   .cardImageContainer{
   padding: 0%;
