@@ -30,3 +30,13 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+@media screen and (max-width: 700px){
+    .footerElement{
+        padding-bottom: 0.1rem;
+    }
+    .footerData{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+}

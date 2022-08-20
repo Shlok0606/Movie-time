@@ -10,7 +10,7 @@ border-radius: 2rem;
 .cardImageContainer{
   
   text-align: center;
-  margin: 1rem 0;
+  margin: 5% 0;
    
 }
 
@@ -57,4 +57,29 @@ border-radius: 2rem;
   .cardSubhead{
     font-size: 0.9rem;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .cardImage{
+    border-radius: 2rem;
+    width: 95%;
+    height: 110%;
+  }
+  .cardImageContainer{
+  padding: 0%;
+  
+      }
+
+      .cardContainer{
+      
+       margin: 1rem;
+      }
+
+      
+.cardImageContainer{
+  
+ 
+  margin: 2.5% 0;
+   
+}
 }

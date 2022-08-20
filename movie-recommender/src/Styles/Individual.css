@@ -122,8 +122,8 @@
     
 
     .imgContainer img{
-        box-shadow: none;
-         width: 45vw;
+       
+         width: 35vw;
          height: 60vh;
         padding: 0;
         margin: 0;
@@ -142,9 +142,29 @@
     }
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px){
+        .imgContainer img{
+            width: 45vw;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
 
         .imgContainer img{
-            width: 65vw;
+            width: 60vw;
+        }
+
+        .modalOverview{
+            padding: 0 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        .modalTitle {
+            padding-top:0.5rem ;
+            font-size: 2.5rem;
+        }
+        .tagline{
+            padding-bottom: 1rem;
+            font-size: 1.1rem;
         }
     }
